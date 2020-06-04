@@ -233,11 +233,6 @@ header nav ul li a {
 }
 
 /*reach out*/
-.contact-info>* {
-    flex: 1;
-    margin: 15px;
-}
-
 .contact {
     background: #024e76;
 }
@@ -246,10 +241,22 @@ header nav ul li a {
     color: #fce138;
 }
 
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
+
 .contact-info {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+
+.contact-info div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: white;
 }
 
 .contact-info iframe {
@@ -272,6 +279,10 @@ header nav ul li a {
     text-align: left;
 }
 
+.contact-info a {
+    color: #fce138;
+}
+
 .contact-form input,
 .contact-form textarea {
     border: solid 1px #024e76;
@@ -279,16 +290,16 @@ header nav ul li a {
     padding: 7px 15px;
     font-size: 16px;
     color: #024e76;
+}
+
+.contact-form button {
+    width: 100%;
     border: none;
     background: #fce138;
     color: #024e76;
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-}
-
-.contact-info a {
-    color: #fce138;
 }
 
 /*footer*/
@@ -316,6 +327,7 @@ footer a {
     color: #024e76;
 }
 
+/*utilities*/
 section {
     padding: 60px;
 }
