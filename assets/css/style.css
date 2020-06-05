@@ -32,6 +32,7 @@ header a {
     text-decoration: none;
     color: #fce138;
 }
+
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -233,7 +234,7 @@ header nav ul li a {
 }
 
 /*reach out*/
-.contact-info > * {
+.contact-info>* {
     flex: 1;
     margin: 15px;
 }
@@ -334,15 +335,111 @@ section {
 
 /*mediaqueries for small desktop screens and smaller*/
 @media screen and (max-width: 980px) {
-    
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        text-align: center;
+        width: 100%;
+    }
+
+    footer h2,
+    footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero-cta,
+    .hero-form {
+        width: 100%;
+    }
+
+    .hero-cta {
+        text-align: center;
+    }
+
+    .section-title {
+        width: 80%;
+    }
+
+    .trainer {
+        flex: 0 70%;
+    }
+
+    .contact-info iframe {
+        flex: 1 100%;
+    }
 }
 
 /*mediaqueries for tablets and smaller*/
 @media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+    }
 
+    .steps h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin: 15px;
+    }
+
+    .step-text {
+        flex: 100%;
+    }
 }
 
 /*mediaqueries for mobile phones and smaller*/
 @media screen and (max-width: 575px) {
-    
+    .hero-form button {
+        width: 100%;
+    }
+
+    .section-title {
+        width: 95%;
+    }
+
+    .intro p {
+        width: 100%;
+    }
+
+    .trainer {
+        flex: 0 100%;
+    }
+
+    .contact-info {
+        text-align: center;
+    }
+
+    .contact-info>* {
+        flex: 0 100%;
+    }
+
+    .contact-form {
+        order: 3;
+    }
 }
