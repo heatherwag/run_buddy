@@ -103,7 +103,7 @@ header nav ul li a:hover {
 
 .hero-form {
     color: var(--secondary-color);
-    background-color:rgba(252,225,56,0.8);
+    background-color: rgba(252, 225, 56, 0.8);
     padding: 20px;
     border: solid 3px var(--secondary-color);
     width: 40%;
@@ -134,13 +134,13 @@ header nav ul li a:hover {
     width: 100%;
     margin-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
 }
 
 .form-input:focus {
-    background-color: rgba(255,255,255, 1);
+    background-color: rgba(255, 255, 255, 1);
     outline: none;
-  }
+}
 
 .hero-form button {
     color: var(--primary-color);
@@ -155,18 +155,21 @@ header nav ul li a:hover {
     background-color: var(--tertiary-color);
 }
 
-.checkbox-wrapper input, .radio-wrapper input {
+.checkbox-wrapper input,
+.radio-wrapper input {
     opacity: 0;
 }
 
-.checkbox-wrapper label, .radio-wrapper label {
+.checkbox-wrapper label,
+.radio-wrapper label {
     position: relative;
     left: 10px;
     margin: 10px;
     line-height: 1.6;
 }
 
-.checkbox-wrapper label::before, .radio-wrapper label::before {
+.checkbox-wrapper label::before,
+.radio-wrapper label::before {
     content: "";
     height: 20px;
     width: 20px;
@@ -191,9 +194,9 @@ header nav ul li a:hover {
     left: -29px;
     top: -3px;
     background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
-  }
-  
-  .checkbox-wrapper label::after {
+}
+
+.checkbox-wrapper label::after {
     content: "";
     height: 6px;
     width: 14px;
@@ -203,18 +206,19 @@ header nav ul li a:hover {
     left: -26px;
     top: 1px;
     transform: rotate(-58deg);
-  }
+}
 
-  .checkbox-wrapper input + label::after, .radio-wrapper input + label::after {
-    content: none;  
-  }
+.checkbox-wrapper input+label::after,
+.radio-wrapper input+label::after {
+    content: none;
+}
 
-  .checkbox-wrapper input:checked + label::after, 
-  .radio-wrapper input:checked + label::after {
+.checkbox-wrapper input:checked+label::after,
+.radio-wrapper input:checked+label::after {
     content: "";
-  }
-  
-  /*all sections*/
+}
+
+/*all sections*/
 .section-title {
     font-size: 48px;
     color: var(--secondary-color);
@@ -260,7 +264,7 @@ header nav ul li a:hover {
 
 .step:not(:last-child) {
     border-bottom: 1px solid var(--tertiary-color);
-  }
+}
 
 .step h3 {
     color: var(--secondary-color);
@@ -315,8 +319,63 @@ header nav ul li a:hover {
     flex: 1;
 }
 
-.trainer img {
+.trainer-img {
+    background-position: center;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.trainer-1 {
+    background-image: url("../images/trainer-1.jpg")
+}
+
+.trainer-2 {
+    background-image: url("../images/trainer-2.jpg");
+}
+
+.trainer-3 {
+    background-image: url("../images/trainer-3.jpg");
+}
+
+.trainer-1,
+.trainer-2,
+.trainer-3 {
+    background-size: cover;
+    position: relative;
     width: 100%;
+    min-height: 300px;
+    display: flex;
+    padding: 15px;
+    align-items: flex-end;
+}
+
+.trainer-1::after,
+.trainer-2::after,
+.trainer-3::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.trainer-1 h3,
+.trainer-2 h3,
+.trainer-3 h3 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    position: relative;
+    z-index: 1;
+}
+
+.trainer-1 h4,
+.trainer-2 h4,
+.trainer-3 h4 {
+    font-size: 22px;
+    position: relative;
+    z-index: 2;
 }
 
 .trainer-bio {
@@ -353,7 +412,7 @@ header nav ul li a:hover {
     background: lightyellow;
     width: 80%;
     display: grid;
-/*repeat(iterator, size)*/
+    /*repeat(iterator, size)*/
     grid-template-columns: 1fr repeat(2, 4fr);
     grid-template-rows: repeat(5, 1fr) 2fr;
     border: solid 2px var(--secondary-color);
@@ -389,7 +448,9 @@ header nav ul li a:hover {
     transform: rotate(180deg);
 }
 
-.grid-head, .grid-price, .service-grid-item.cancel {
+.grid-head,
+.grid-price,
+.service-grid-item.cancel {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -449,12 +510,13 @@ header nav ul li a:hover {
     font-size: 16px;
     color: var(--secondary-color);
     border-radius: 10px;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
-.contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;  
+.contact-form input:focus,
+.contact-form textarea:focus {
+    background-color: rgba(255, 255, 255, 1);
+    outline: none;
 }
 
 .contact-form button {
@@ -509,6 +571,7 @@ section {
 
 /*mediaqueries for small desktop screens and smaller*/
 @media screen and (max-width: 980px) {
+
     /*header*/
     header {
         padding-bottom: 0;
@@ -540,7 +603,8 @@ section {
     }
 
     /*hero*/
-    .hero-cta, .hero-form {
+    .hero-cta,
+    .hero-form {
         width: 100%;
     }
 
@@ -566,6 +630,7 @@ section {
 
 /*mediaqueries for tablets and smaller*/
 @media screen and (max-width: 768px) {
+
     /*sections*/
     section {
         padding: 30px 15px;
@@ -605,7 +670,9 @@ section {
 
     .service-grid-item.premium {
         grid-column: 2;
-    } /*implicit didn't want to do it's job so I had to tell it to*/
+    }
+
+    /*implicit didn't want to do it's job so I had to tell it to*/
 
     .service-grid-item.both {
         grid-column: 1/-1;
@@ -621,6 +688,7 @@ section {
 
 /*mediaqueries for mobile phones and smaller*/
 @media screen and (max-width: 575px) {
+
     /*hero*/
     .hero-form button {
         width: 100%;
@@ -654,4 +722,3 @@ section {
         order: 3;
     }
 }
-
