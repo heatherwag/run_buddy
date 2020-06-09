@@ -319,14 +319,8 @@ header nav ul li a:hover {
     flex: 1;
 }
 
-.trainer-img {
-    background-position: center;
-    background-attachment: fixed;
-    background-position: 80%;
-}
-
 .trainer-1 {
-    background-image: url("../images/trainer-1.jpg")
+    background-image: url("../images/trainer-1.jpg");
 }
 
 .trainer-2 {
@@ -337,45 +331,9 @@ header nav ul li a:hover {
     background-image: url("../images/trainer-3.jpg");
 }
 
-.trainer-1,
-.trainer-2,
-.trainer-3 {
-    background-size: cover;
-    position: relative;
+.trainer-img {
     width: 100%;
     min-height: 300px;
-    display: flex;
-    padding: 15px;
-    align-items: flex-end;
-}
-
-.trainer-1::after,
-.trainer-2::after,
-.trainer-3::after {
-    content: "";
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(rgba(252, 225, 56, 0.3), rgba(2, 78, 118, 1) 100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.trainer-1 h3,
-.trainer-2 h3,
-.trainer-3 h3 {
-    font-size: 28px;
-    margin-bottom: 5px;
-    position: relative;
-    z-index: 1;
-}
-
-.trainer-1 h4,
-.trainer-2 h4,
-.trainer-3 h4 {
-    font-size: 22px;
-    position: relative;
-    z-index: 2;
 }
 
 .trainer-bio {
