@@ -10,7 +10,7 @@ body {
     font-family: helvetica, Arial, sans-serif;
 }
 
-
+/*header navigation*/
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
@@ -54,25 +54,41 @@ header nav ul li a {
     font-size: 1.55vw;
 }
 
-
+/*hero*/
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    height: 600px;
     background-size: cover;
     background-position: center;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.hero-cta {
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+}
+.hero-cta h2 {
+    color: #fce138;
+    font-size: 55px;
+    font-style: italic;
+}
 
+.hero-cta p {
+    color: white;
+    font-size: 16px;
+}
 .hero-form {
+    width: 40%;
+    margin: 3.5%;
     color: #024e76;
     background-color: #fce138;
     padding: 20px;
-    width: 500px;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: 120px;
-    right: 140px;
 }
 
 
