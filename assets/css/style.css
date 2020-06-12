@@ -225,6 +225,7 @@ header nav ul li a {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .trainer {
     margin: 20px;
     background: #024e76;
@@ -258,10 +259,53 @@ header nav ul li a {
 
 
 /*service grid*/
-.service-grid-container {}
+.services {
+    background: #fce138;
+}
 
-.service-grid-item {}
+.service-grid-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 
+.service-grid-container {
+    background: lightyellow;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 4fr);
+    grid-template-rows: repeat(5, 1fr) 2fr;
+    border: solid 2px #024e76;
+    color: #024e76;
+    font-size: 1.2rem;
+}
+
+.service-grid-item {
+    padding: 15px 0;
+    border: solid 2px #024e76;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.grid-head, .grid-price, .service-grid-item.cancel {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.service-grid-item.basic {
+    grid-column: 2/ span 1;
+}
+
+.service-grid-item.both {
+    grid-column: 2/ span 2;
+}
+
+.service-grid-item.cancel {
+    grid-row: 1/-1;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
 
 
 /*reach out*/
@@ -281,10 +325,11 @@ header nav ul li a {
     flex-wrap: wrap;
 }
 
-.contact-info > * {
+.contact-info>* {
     flex: 1;
     margin: 15px;
 }
+
 .contact-info iframe {
     height: 400px;
 }
@@ -312,7 +357,8 @@ header nav ul li a {
     text-align: left;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
     border: solid 1px #024e76;
     display: block;
     padding: 7px 15px;
@@ -322,6 +368,7 @@ header nav ul li a {
     margin-bottom: 15px;
     margin-top: 5px;
 }
+
 .contact-info a {
     color: #fce138;
 }
@@ -382,7 +429,7 @@ section {
         padding-bottom: 0;
         justify-content: center;
     }
-    
+
     header h1 {
         width: 100%;
         text-align: center;
@@ -398,7 +445,8 @@ section {
         font-size: 20px;
     }
 
-    .hero-cta, .hero-form {
+    .hero-cta,
+    .hero-form {
         width: 100%;
     }
 
@@ -418,7 +466,8 @@ section {
         flex: 1 100%;
     }
 
-    footer h2, footer div {
+    footer h2,
+    footer div {
         text-align: center;
         width: 100%;
     }
@@ -450,6 +499,25 @@ section {
     .step-text {
         flex: 100%;
     }
+
+    .service-grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-grid-item.basic {
+        grid-column: 1;
+    }
+
+    .service-grid-item.both {
+        grid-column: 1/-1;
+    }
+
+    .service-grid-item.cancel {
+        transform: none;
+        writing-mode: unset;
+        grid-column: 1/-1;
+        grid-row: -1;
+    }
 }
 
 /*MEDIA QUERY FOR MOBILE PHONES AND SMALLER*/
@@ -457,6 +525,7 @@ section {
     .hero-form button {
         width: 100%;
     }
+
     .section-title {
         width: 95%;
     }
@@ -473,7 +542,7 @@ section {
         text-align: center;
     }
 
-    .contact-info > * {
+    .contact-info>* {
         flex: 0 100%;
     }
 
