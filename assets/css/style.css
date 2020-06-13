@@ -354,7 +354,13 @@ header nav ul li a:hover {
     position: absolute;
     top: 0;
     left: 0;
+    opacity: 0;
 }
+
+.trainer:hover .trainer-img::after {
+    opacity: 1;
+}
+
 
 .trainer-img h3 {
     font-size: 24px;
@@ -368,6 +374,7 @@ header nav ul li a:hover {
     position: relative;
     z-index: 2;
 }
+
 
 .trainer-1 {
     background-image: url(../images/trainer-1.jpg);
