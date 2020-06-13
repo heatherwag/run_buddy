@@ -356,6 +356,19 @@ header nav ul li a:hover {
     left: 0;
 }
 
+.trainer-img h3 {
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.trainer-img h4 {
+    font-size: 18px;
+    position: relative;
+    z-index: 2;
+}
+
 .trainer-1 {
     background-image: url(../images/trainer-1.jpg);
 }
